@@ -44,6 +44,9 @@ I always use [flake8](https://flake8.pycqa.org/), and for collaborative projects
 Note that [black has editor integrations](https://black.readthedocs.io/en/stable/integrations/editors.html).
 
 ## Testing
+
+[pytest](https://docs.pytest.org/) with liberal use of fixtures
+
 ## Managing tidying and testing tasks
 ### Nox
 
