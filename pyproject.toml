@@ -1,0 +1,41 @@
+[project]
+name = "python_module"
+dynamic = ["version"]
+authors = [{name="Elizabeth Alpert", email="betsyalpert@fastmail.com"}]
+description = "A package of some sample workflow config. Not functional."
+readme = "readme.md"
+license = {text = "CC-BY 4.0 International"}
+requires-python = ">= 3.11"
+dependencies = [
+	"click >= 8.1"
+]
+
+[project.optional-dependencies]
+dev = [
+	"pytest",
+	"nox",
+	"pre-commit",
+	"pip-tools"
+]
+tidy = [
+	"black",
+	"flake8"
+]
+
+[project.scripts]
+python-module-cli="python_module:main"
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "python_module.__version__"}
+
+[tool.black]
+line-length = 88
+# extend-exclude also excludes the contents of .gitignore
+extend-exclude = '''
+(
+)
+'''

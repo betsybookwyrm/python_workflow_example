@@ -1,0 +1,10 @@
+[flake8]
+# Options required for black compatibility
+max-line-length = 88
+extend-ignore = E203,E701
+
+# Which files/folders to lint
+exclude =
+	.git,
+	.nox,
+	.pytest-cache

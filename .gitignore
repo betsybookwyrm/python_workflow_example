@@ -1,0 +1,18 @@
+# Environment setup
+.python-version
+.env
+.envrc
+
+# IDE artefacts
+.idea
+
+# Build artefacts
+dist/
+sdist/
+lib/
+*.eggs
+*.egg-info
+__pycache__/
+
+# Test artefacts
+.nox/
