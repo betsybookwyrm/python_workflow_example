@@ -2,6 +2,9 @@
 
 This repository is meant as an experimental and demonstration space for some elements of my Python development workflow. This is all highly opinionated and probably not optimal - it's just the result of building up habits and occasionally changing tooling over time.
 
+I'm not releasing it as open source right now for the above reason. Current license for the whole thing is CC-BY 4.0, though if you're just pulling pieces from the code and config you are welcome to do so freely and without attribution.
+
+
 ## Python environment management
 ### Python installations
 
